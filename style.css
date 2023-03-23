@@ -1,0 +1,32 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    background-color: cornflowerblue;
+    color: rgb(92, 24, 125);
+}
+
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.formcep{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2px;
+}
+input{
+    border-radius: 20px;
+}
+
