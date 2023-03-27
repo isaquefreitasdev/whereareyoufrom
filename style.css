@@ -2,17 +2,20 @@ body{
     background-color: blueviolet;
 }
 
-form {
+.container {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
-    position: relative;
-    top: 200px;
-    background-color: ;
+    height: 100vh;
+    
+  }
+  .content{
+  
   }
 
   input[type="text"] {
-    padding: 10px;
+    padding: 1em;
     margin: 10px;
     border-radius: 5px;
     border: none;
@@ -20,7 +23,7 @@ form {
   }
 
   button {
-    padding: 10px;
+    padding: 0.8em;
     background-color: #4caf50;
     color: white;
     border: none;
@@ -35,6 +38,24 @@ form {
 
   label{
     font-family: 'Teko', sans-serif;
-    font-size: 2em;
-    color: white;
+    font-size: 3em;
+    color: white; 
   }
+  p{
+    font-family: 'Teko', sans-serif;
+    font-weight: 300;
+    font-size: 1.5em;
+    color: rgb(238, 255, 0);
+    background-color: blue;
+    border-radius: 10px;
+    padding: 1em;
+
+  }
+
+
+@media screen and (min-width: 768px){
+  .container input {
+    
+    
+  }
+}

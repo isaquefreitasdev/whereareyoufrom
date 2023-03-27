@@ -7,23 +7,34 @@
       href="https://fonts.googleapis.com/css2?family=Teko&display=swap"
       rel="stylesheet"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Teko:wght@300;400&display=swap"
+      rel="stylesheet"
+    />
     <title>One Field Form</title>
-    <link rel="stylesheet" href="style.css">
-
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="/big-search-len.png" type="image/x-icon">
   </head>
   <body>
-    <form>
-      <label for="field">Digite seu Cep:</label>
-      <input
-        type="text"
-        id="field"
-        name="field"
-        placeholder="Descubra sua cidade"
-      />
-      <button onclick="getCep()" id="sayCep" type="button">Submit</button>
-	  <p id="city"></p>
+    
+    </header>
+    <div class="container">
+        
+          <label for="field">CepSearch:</label>
+          <input
+            type="text"
+            id="field"
+            name="field"
+            placeholder="Descubra sua cidade"
+          />
+          <button onclick="getCep()" id="sayCep" type="button">Buscar</button>
+          <p id="adressCompleted"></p>
+     
 
-    </form>
-	<script src="script.js"></script>
+    </div>
+     
+    <script src="script.js"></script>
   </body>
 </html>
