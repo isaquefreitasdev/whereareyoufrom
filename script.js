@@ -1,17 +1,18 @@
-function getCep(){
-
-    let sayYourCep = document.getElementById("cep_what").value;
-    if(sayYourCep === ""){
-        alert("Preencha os campos");
-        return;
+const sayCep = document.getElementById("sayCep")
+async function getCep(){
+    
+    let sayYourCep = document.getElementById("field").value;
+    const conditionCep = sayYourCep.lenght > 8
+   if(sayYourCep !== ""  || !conditionCep){
+    let res = await fetch( `https://viacep.com.br/ws/${sayYourCep}/json/`)
+    let data = await res.json();
+    city.innerText = data.localidade;   
+    document.getElementById("field").value = "";
+    }else{
+        alert("Preencha por favor")
     }
-    fetch( `https://viacep.com.br/ws/${sayYourCep}/json/`)
-    .then((response) =>{
-        return response.json()
-    }).then((data)=>{
-      
-            city.textContent = data.bairro;
-    }).catch((err)=>{
-        console.log(err);
-    })
+
 }
+
+
+
