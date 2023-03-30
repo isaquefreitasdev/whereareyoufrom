@@ -10,9 +10,7 @@ body{
     height: 100vh;
     
   }
-  .content{
-  
-  }
+
 
   input[type="text"] {
     padding: 1em;
@@ -53,9 +51,3 @@ body{
   }
 
 
-@media screen and (min-width: 768px){
-  .container input {
-    
-    
-  }
-}
