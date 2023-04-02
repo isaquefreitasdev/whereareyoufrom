@@ -54,5 +54,41 @@ body{
   .display{
     display: block;
   }
+@media (min-width: 280px) and (min-height:896px) {
+  .container{
+    position: relative;
+    bottom: 500px;
+    
+  }
+  p{
+    font-size:4rem;
+  }
+  label{
+    font-size: 10em;
+  }
+  input[type="text"]{
+    
+    font-size: 40px;
+  }
+  button{
+    font-size: 50px;
+    margin-top: 10px;
+    border-radius: 10px;
+  }
+
+}
+@media  (min-width: 375px) and (min-height:667px){
+  .container{
+    position: relative;
+    top: 1px;
+
+  }
+}
+  
+
+
+
+
+  
 
 
